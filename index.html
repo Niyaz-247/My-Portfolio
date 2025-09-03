@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Niyaz Alam Warsi | Portfolio</title>
+  
+  <!-- Add these lines before your design.css link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="design.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <!-- Navbar -->
@@ -21,10 +28,16 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <h2>Hello, I'm <span>Niyaz Alam Warsi</span></h2>
-    <p>Aspiring Data Analyst → Future Data Scientist 🚀</p>
-  </section>
+  <div class="hero-container">
+    <div class="hero-content">
+        <h1>Hello, I'm <span>Niyaz Alam Warsi</span></h1>
+        <p class="hero-subtitle">Aspiring Data Analyst → Future Data Scientist</p>
+    </div>
+    <div class="profile-image">
+        <!-- Add your image here -->
+        <img src="images/profile-pic.jpg" alt="Niyaz Alam Warsi">
+    </div>
+  </div>
 
   <!-- About Section -->
   <section id="about" class="fade-in">
@@ -42,77 +55,151 @@
   <!-- Projects Section -->
   <section id="projects" class="fade-in">
     <h2>Projects</h2>
-    <div class="projects">
-      <div class="project-card">
-        <h3>Project 1</h3>
-        <p>SQL Database Management – Built and optimized queries for business insights.</p>
-      </div>
-      <div class="project-card">
-        <h3>Project 2</h3>
-        <p>Python Data Analysis – Analyzed datasets and visualized insights using Pandas and Matplotlib.</p>
-      </div>
-      <div class="project-card">
-        <h3>Project 3</h3>
-        <p>Machine Learning – Implemented beginner models for classification and regression tasks.</p>
-      </div>
+    <div class="projects-container">
+        <div class="project-card">
+            <img src="images/data-analysis.jpg" alt="Data Analysis Project" class="project-image">
+            <div class="project-content">
+                <h3>Data Analysis Dashboard</h3>
+                <p class="project-description">A comprehensive data visualization platform featuring interactive charts, real-time analytics, and automated reporting systems.</p>
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Tableau</span>
+                    <span>SQL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/machine-learning.jpg" alt="ML Project" class="project-image">
+            <div class="project-content">
+                <h3>Predictive Analytics Model</h3>
+                <p class="project-description">Machine learning model for predictive analytics, featuring data preprocessing, model training, and performance optimization.</p>
+                <div class="project-tech">
+                    <span>Scikit-learn</span>
+                    <span>TensorFlow</span>
+                    <span>NumPy</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/big-data.jpg" alt="Big Data Project" class="project-image">
+            <div class="project-content">
+                <h3>Big Data Processing Pipeline</h3>
+                <p class="project-description">Large-scale data processing system utilizing distributed computing and real-time data streaming.</p>
+                <div class="project-tech">
+                    <span>Hadoop</span>
+                    <span>PySpark</span>
+                    <span>MongoDB</span>
+                </div>
+            </div>
+        </div>
     </div>
   </section>
 
   <!-- Skills Section -->
   <section id="skills" class="fade-in">
     <h2>Skills</h2>
-    <div class="skills">
-      <div class="skill">
-        <p>SQL <span class="level">Beginner</span></p>
-        <div class="bar"><div class="fill beginner" style="width:30%;">30%</div></div>
-      </div>
-      <div class="skill">
-        <p>Python <span class="level">Intermediate</span></p>
-        <div class="bar"><div class="fill intermediate" style="width:60%;">60%</div></div>
-      </div>
-      <div class="skill">
-        <p>Data Analysis <span class="level">Beginner</span></p>
-        <div class="bar"><div class="fill beginner" style="width:30%;">30%</div></div>
-      </div>
-      <div class="skill">
-        <p>Machine Learning <span class="level">Beginner</span></p>
-        <div class="bar"><div class="fill beginner" style="width:30%;">30%</div></div>
-      </div>
-      <div class="skill">
-        <p>AI Concepts <span class="level">Beginner</span></p>
-        <div class="bar"><div class="fill beginner" style="width:30%;">30%</div></div>
-      </div>
-      <div class="skill">
-        <p>Visualization (Power BI / Tableau) <span class="level">Beginner</span></p>
-        <div class="bar"><div class="fill beginner" style="width:30%;">30%</div></div>
-      </div>
-      <div class="skill">
-        <p>Java <span class="level">Beginner</span></p>
-        <div class="bar"><div class="fill beginner" style="width:35%;">35%</div></div>
-      </div>
-      <p>JavaScript <span class="level">Beginner</span></p>
-        <div class="bar"><div class="fill beginner" style="width:35%;">35%</div></div>
-      </div>
-      <p>HTML <span class="level">Beginner</span></p>
-        <div class="bar"><div class="fill beginner" style="width:35%;">35%</div></div>
-      </div>
-      <p>CSS <span class="level">Beginner</span></p>
-        <div class="bar"><div class="fill beginner" style="width:35%;">35%</div></div>
-      </div>
-      <p>Excel <span class="level">Intermediate</span></p>
-        <div class="bar"><div class="fill intermediate" style="width:55%;">55%</div></div>
-      </div>
+    
+    <!-- New Skills Grid -->
+    <div class="skills-grid">
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fas fa-file-excel"></i>
+            </div>
+            <p>Excel</p>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fas fa-database"></i>
+            </div>
+            <p>SQL</p>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fab fa-python"></i>
+            </div>
+            <p>Python NumPy</p>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fab fa-python"></i>
+            </div>
+            <p>Python Pandas</p>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fab fa-python"></i>
+            </div>
+            <p>Python</p>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fas fa-robot"></i>
+            </div>
+            <p>Gen AI</p>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon">
+                <svg viewBox="0 0 32 32" class="power-bi-icon">
+                    <path d="M20.889 7.828h4.855v17.399h-4.855V7.828zm-7.753 6.191h4.855v11.208h-4.855V14.019zM5.383 19.486h4.855v5.741H5.383v-5.741zm27.383-12.82L21.377 0H0v32h32.766V6.666z"/>
+                </svg>
+            </div>
+            <p>Power BI</p>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon">
+                <svg viewBox="0 0 32 32" class="tableau-icon">
+                    <path d="M15.48 4.92h-1.52v4h-4v1.6h4v4h1.52v-4h4v-1.6h-4v-4zm8.487-.001h-1.52v4h-4v1.6h4v4h1.52v-4h4v-1.6h-4v-4zm-16.969 0h-1.52v4h-4v1.6h4v4h1.52v-4h4v-1.6h-4v-4zm8.482 8.477h-1.52v4h-4v1.6h4v4h1.52v-4h4v-1.6h-4v-4zm8.487 0h-1.52v4h-4v1.6h4v4h1.52v-4h4v-1.6h-4v-4zm-16.969 0h-1.52v4h-4v1.6h4v4h1.52v-4h4v-1.6h-4v-4zm8.482 8.523h-1.52v4h-4v1.6h4v4h1.52v-4h4v-1.6h-4v-4zm8.487 0h-1.52v4h-4v1.6h4v4h1.52v-4h4v-1.6h-4v-4zm-16.969 0h-1.52v4h-4v1.6h4v4h1.52v-4h4v-1.6h-4v-4z"/>
+                </svg>
+            </div>
+            <p>Tableau</p>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fab fa-java"></i>
+            </div>
+            <p>Java</p>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fab fa-js"></i>
+            </div>
+            <p>JavaScript</p>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fab fa-html5"></i>
+            </div>
+            <p>HTML</p>
+        </div>
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fab fa-css3-alt"></i>
+            </div>
+            <p>CSS</p>
+        </div>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="fade-in">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:yourname@email.com">nalamwarsi@gmail.com</a></p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
-    <p>GitHub: <a href="#">github.com/yourprofile</a></p>
+    <div class="contact-links">
+        <a href="mailto:nalamwarsi@gmail.com" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-envelope"></i> Gmail
+        </a>
+        <a href="https://www.linkedin.com/in/niyaz-alam-warsi-2421a8263/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/Niyaz-247" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i> GitHub
+        </a>
+    </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Niyaz Alam Warsi | All Rights Reserved</p>
   </footer>
